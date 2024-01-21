@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    display: flex;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.container {
+    max-width: 960px;
+    margin-top: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.autocomplete {
+    width: 500px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    background-color: yellow;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.autocomplete input {
+    width: 100%;
+    border: none;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px 10px 0 10px;
+    background-color: yellow;
+    text-align: center;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus {
+    outline: none;
+}
+
+.suggestions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #d4d4d4;
+    background-color: #f7f7f7;
+    border-radius: 0 0 10px 10px;
+}
+
+.suggestions li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.autocomplete li:hover {
+    background-color: #d4d4d4;
 }

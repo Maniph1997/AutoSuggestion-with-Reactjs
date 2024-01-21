@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Autocomplete from './components/Autocomplete';
 
 function App() {
+  const cityNames = [
+		"Amsterdam",
+		"Berlin",
+		"London",
+		"New York",
+		"Paris",
+		"Rome",
+		"San Francisco",
+		"Tokyo",
+		"Washington DC",
+		"Zurich",
+		"Copenhagen",
+		"Helsinki",
+		"Madrid",
+		"Reykjavik",
+		"Stockholm",
+		"Vancouver",
+		"Vienna",
+		"Zagreb",
+		"Budapest",
+		"Dublin",
+		"Hamburg",
+		"Krakow",
+		"Lisbon",
+		"Ljubljana",
+	];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Autocomplete options={cityNames}/>
+      
     </div>
   );
 }
